@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        BroadcastMessage("OnDamageTaken"); // string reference for method of child component
         hitPoints -= damage;
         if (hitPoints <= 0)
         {
