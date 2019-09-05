@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 6106500748619431583}
   - component: {fileID: 875774891}
   - component: {fileID: 8854732493956434608}
+  - component: {fileID: 6950700732707876605}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -345,6 +346,21 @@ MonoBehaviour:
   fpsCamera: {fileID: 2000000}
   zoomedOutFOV: 60
   zoomedInFOV: 20
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
+--- !u!114 &6950700732707876605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353a1e4e96094624b905b3f4f60ad32d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1 &4946653611849585096
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +495,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1766814854480755888, guid: c0afdbdb1803a3242974df91a270faed,
         type: 3}
+    - target: {fileID: 333479487509396531, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 6950700732707876605}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
 --- !u!4 &1251670792248748352 stripped
