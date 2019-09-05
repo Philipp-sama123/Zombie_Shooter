@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 11400004}
   - component: {fileID: 6106500748619431583}
   - component: {fileID: 875774891}
+  - component: {fileID: 8854732493956434608}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -248,7 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2000000}
   movementSettings:
-    ForwardSpeed: 9
+    ForwardSpeed: 11
     BackwardSpeed: 6
     StrafeSpeed: 5
     RunMultiplier: 2
@@ -329,6 +330,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!114 &8854732493956434608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1883a19ac32f6504f906e4f2dabeeca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 2000000}
+  zoomedOutFOV: 60
+  zoomedInFOV: 20
 --- !u!1 &4946653611849585096
 GameObject:
   m_ObjectHideFlags: 0
