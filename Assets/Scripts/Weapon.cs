@@ -6,22 +6,29 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
+
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
+
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
 
+    [SerializeField] float timeBetweenShoots = 0.5f;
+
+    bool canShoot = true;
+
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0) && canShoot == true)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
     }
 
-    private void Shoot()
+    IEnumerator Shoot()
     {
+        canShoot = false;
         if (ammoSlot.getCurrentAmmoAmount() > 0)
         {
             PlayMuzzleFlash();
@@ -30,9 +37,11 @@ public class Weapon : MonoBehaviour
         }
         else
         {
-            return;
             // todo: sound for empty weapon
         }
+        yield return new WaitForSeconds(timeBetweenShoots);
+        canShoot = true;
+
     }
 
     private void PlayMuzzleFlash()
