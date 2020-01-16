@@ -82,6 +82,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 1257093997175703147, guid: 6a322c9be5100724c9f47f3f6810f374,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257093997175703147, guid: 6a322c9be5100724c9f47f3f6810f374,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257093997175703147, guid: 6a322c9be5100724c9f47f3f6810f374,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7058284848802402155, guid: 6a322c9be5100724c9f47f3f6810f374,
         type: 3}
       propertyPath: ammoType
